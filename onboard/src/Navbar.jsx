@@ -13,7 +13,7 @@ export default function Navbar() {
       {/* Centre */}
       <div className="navbar-center">
         <a href="/">
-          <img src="/logo.png" alt="Logo" className="logo" />
+          <img src= "/avatar.png" alt="Logo" className="logo" />
         </a>
       </div>
 

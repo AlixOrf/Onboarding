@@ -1,12 +1,17 @@
+/* Barre globale */
 .navbar {
   width: 100%;
-  background-color: #e5e5e5; /* gris clair */
+  max-width: 1500px; /* largeur maximale de la navbar */
+  background: #ffffff;
   padding: 12px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid purple; /* contour violet */
-  box-sizing: border-box;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: "Segoe UI", sans-serif;
+  color: #1e3a8a;
+  margin: 0 auto; /* centre la navbar */
+  border-radius: 8px; /* optionnel : arrondi léger */
 }
 
 /* Liens gauche */
@@ -17,17 +22,19 @@
 
 .navbar-left a {
   text-decoration: none;
-  color: black;
-  font-weight: 400;
+  color: #1e3a8a; /* bleu foncé */
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
 .navbar-left a:hover {
-  text-decoration: underline;
+  color: #059669; /* vert sobre */
 }
 
-/* Centre */
+/* Centre (logo) */
 .navbar-center .logo {
-  height: 32px; /* taille du logo */
+  height: 28px;
+  display: block;
 }
 
 /* Droite */
@@ -38,12 +45,14 @@
 }
 
 .username {
-  font-weight: bold;
+  font-weight: 500;
+  color: #1e3a8a;
 }
 
 .avatar {
   width: 32px;
   height: 32px;
-  border-radius: 50%; /* rond */
-  background-color: #333; /* fond gris foncé si pas d'image */
+  border-radius: 50%;
+  border: 2px solid #059669; /* vert discret */
+  object-fit: cover;
 }
