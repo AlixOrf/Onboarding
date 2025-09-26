@@ -39,7 +39,7 @@ function Home() {
           pour innover, partager et grandir. N’hésite pas à poser des questions,
           proposer des idées et profiter de l’ambiance collaborative.
         </p>
-        <p>✨ Hâte de voir ta contribution sur nos prochains projets !</p>
+        <p>Hâte de voir ta contribution sur nos prochains projets !</p>
       </div>
 
       {/* Section Actualité */}
@@ -62,19 +62,19 @@ function Home() {
         }}
       >
         <FlipCard
-          imageSrc="/image.png"
+          imageSrc="/image2.jpg"
           alt="Actualité 1"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod."
+          text="Nous avons organisé un repas convivial pour renforcer les liens de l’équipe et partager un moment agréable ensemble."
         />
         <FlipCard
-          imageSrc="/image.png"
+          imageSrc="/image3.jpg"
           alt="Actualité 2"
-          text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+          text="Lors de la Semaine des Enfants, nous avons célébré la créativité et la curiosité, en partageant des activités ludiques et conviviales avec notre équipe et leurs enfants."
         />
         <FlipCard
-          imageSrc="/image.png"
+          imageSrc="/image4.jpg"
           alt="Actualité 3"
-          text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+          text="Pour les fêtes de fin d’année, nous avons partagé un moment chaleureux et festif, célébrant ensemble nos réussites et la fin d’une année riche en projets."
         />
       </div>
 
@@ -99,7 +99,7 @@ function Home() {
         }}
       >
         <img
-          src="/image.png"
+          src="/image1.jpg"
           alt="À propos"
           style={{
             width: "350px",
@@ -111,10 +111,11 @@ function Home() {
         <div style={{ maxWidth: "450px", textAlign: "left" }}>
           <h3>Qui sommes-nous ?</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Nous sommes TechXpertise, une entreprise innovante fondée en 2018 et spécialisée dans les technologies de 
+            l’information. Avec une équipe de 10 experts passionnés, nous plaçons l’agilité, la collaboration et 
+            l’orientation client au cœur de notre démarche. Basés dans une ville technologique émergente, nous évoluons 
+            dans un espace de coworking moderne qui stimule la créativité et l’innovation.
+
           </p>
         </div>
       </div>
