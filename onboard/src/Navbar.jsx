@@ -1,20 +1,20 @@
 import React from "react";
-import "./Navbar.css"; // on importe le CSS
+import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ onNavigate }) {
   return (
     <nav className="navbar">
       {/* Gauche */}
       <div className="navbar-left">
-        <a href="/livret">Livret</a>
-        <a href="/trombi">Trombi</a>
+        <button onClick={() => onNavigate("livret")}>Livret</button>
+        <button onClick={() => onNavigate("trombi")}>Trombi</button>
       </div>
 
       {/* Centre */}
       <div className="navbar-center">
-        <a href="/">
-          <img src= "/avatar.png" alt="Logo" className="logo" />
-        </a>
+        <button onClick={() => onNavigate("home")}>
+          <img src="/logo.png" alt="Logo" className="logo" />
+        </button>
       </div>
 
       {/* Droite */}
