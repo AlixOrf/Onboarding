@@ -1,58 +1,87 @@
-/* Barre globale */
+/* Navbar.css */
+
 .navbar {
-  width: 100%;
-  max-width: 1400px; /* largeur maximale de la navbar */
-  background: #ffffff;
-  padding: 12px 24px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e5e7eb;
-  font-family: "Segoe UI", sans-serif;
-  color: #1e3a8a;
-  margin: 0 auto; /* centre la navbar */
-  border-radius: 8px; /* optionnel : arrondi léger */
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  background-color: rgb(197, 235, 255);
+  color: #4989bd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
-/* Liens gauche */
-.navbar-left {
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-left a {
-  text-decoration: none;
-  color: #1e3a8a; /* bleu foncé */
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.navbar-left a:hover {
-  color: #059669; /* vert sobre */
-}
-
-/* Centre (logo) */
-.navbar-center .logo {
-  height: 28px;
-  display: block;
-}
-
-/* Droite */
+/* --- Sections --- */
+.navbar-left,
+.navbar-center,
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
+/* Centre prend le logo */
+.navbar-center {
+  flex: 1;
+  justify-content: center;
+}
+
+/* --- Boutons --- */
+.navbar button {
+  background: none;
+  border: none;
+  color: #4989bd;
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.navbar button:hover {
+  color: #4cafef; /* bleu clair en hover */
+}
+
+/* --- Logo --- */
+.logo {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* --- Username & Avatar --- */
 .username {
+  margin-right: 0.8rem;
   font-weight: 500;
-  color: #1e3a8a;
 }
 
 .avatar {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 2px solid #059669; /* vert discret */
   object-fit: cover;
+  border: 2px solid #4989bd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .navbar-left button {
+    font-size: 0.9rem;
+    margin-right: 0.6rem;
+  }
+
+  .username {
+    display: none; /* cache le nom sur mobile, ne garde que l'avatar */
+  }
 }
