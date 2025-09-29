@@ -1,94 +1,93 @@
-import React, { useState } from "react";
+import React from "react";
 
 const members = {
   "Pôle Marketing": [
-    { name: "NOM Prénom", role: "Rôle", info: "Informations supplémentaires sur la personne." },
-    { name: "NOM Prénom", role: "Rôle", info: "Informations supplémentaires sur la personne." },
-    { name: "NOM Prénom", role: "Rôle", info: "Informations supplémentaires sur la personne." },
+    { firstname: "Prénom", lastname: "NOM", role: "Rôle" },
+    { firstname: "Prénom", lastname: "NOM", role: "Rôle" },
+    { firstname: "Prénom", lastname: "NOM", role: "Rôle" },
+    { firstname: "Prénom", lastname: "NOM", role: "Rôle" }
   ],
   "Pôle Comptabilité": [
-    { name: "NOM Prénom", role: "Rôle", info: "Informations supplémentaires sur la personne." },
-    { name: "NOM Prénom", role: "Rôle", info: "Informations supplémentaires sur la personne." },
-    { name: "NOM Prénom", role: "Rôle", info: "Informations supplémentaires sur la personne." },
-  ],
+    { firstname: "Prénom", lastname: "NOM", role: "Rôle" },
+    { firstname: "Prénom", lastname: "NOM", role: "Rôle" },
+    { firstname: "Prénom", lastname: "NOM", role: "Rôle" },
+    { firstname: "Prénom", lastname: "NOM", role: "Rôle" }
+  ]
 };
 
 export default function Trombi() {
-  const [selected, setSelected] = useState(null);
-
   return (
     <>
       <style>{`
         .trombi-container {
           min-height: 100vh;
-          background: white;
+          background: #FFFFFF;
           font-family: Arial, sans-serif;
+          color: #000000;
         }
         .trombi-main {
           padding: 32px;
         }
         .trombi-title {
           text-align: center;
+          margin-bottom: 24px;
         }
         .trombi-title h2 {
-          font-size: 24px;
+          font-size: 28px;
           font-weight: bold;
+          margin-bottom: 8px;
+          color: #4989bd;
         }
         .underline {
           width: 60px;
           height: 3px;
-          background: #9ca3af;
-          margin: 4px auto 16px;
+          background: #4989bd;
+          margin: 0 auto 24px;
         }
         .trombi-grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
           gap: 24px;
           justify-items: center;
         }
         .trombi-card {
-          background: #e5e7eb;
-          padding: 16px;
-          border-radius: 8px;
+          background: #e1eaefff;
+          width: 320px;
+          /* Hauteur réduite */
+          min-height: 110px;      /* ↓ avant 150px */
+          padding: 12px 20px;     /* ↓ réduit légèrement le padding vertical */
+          border-radius: 12px;
           display: flex;
-          flex-direction: column;
           align-items: center;
-          gap: 16px;
-          width: 250px;
-          cursor: pointer;
-          transition: transform 0.3s ease;
-        }
-        .trombi-card.expanded {
-          transform: scale(1.1);
-          background: #d1d5db;
+          gap: 24px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.05);
         }
         .trombi-photo {
-          width: 80px;
-          height: 80px;
-          background: #4b5563;
+          width: 90px;
+          height: 90px;
           border-radius: 50%;
-          transition: all 0.3s ease;
+          background: #4b5563;
+          flex-shrink: 0;
         }
-        .trombi-card.expanded .trombi-photo {
-          width: 120px;
-          height: 120px;
+        .person-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
         .person-name {
+          font-size: 22px;
           font-weight: bold;
+          margin: 0;
         }
         .person-role {
-          font-style: italic;
-          color: #4b5563;
-        }
-        .person-info {
-          margin-top: 8px;
-          font-size: 14px;
-          color: #333;
-          text-align: center;
+          font-size: 18px;
+          color: #000000;
+          margin-top: 6px;
         }
         .separator {
-          margin-top: 40px;
-          border: 1px solid #d1d5db;
+          margin: 40px auto;
+          width: 80%;
+          border: 1px solid #e5e7eb;
         }
       `}</style>
 
@@ -101,27 +100,17 @@ export default function Trombi() {
                 <div className="underline" />
               </div>
               <div className="trombi-grid">
-                {people.map((person, index) => {
-                  const isSelected = selected === `${pole}-${index}`;
-                  return (
-                    <div
-                      key={index}
-                      className={`trombi-card ${isSelected ? "expanded" : ""}`}
-                      onClick={() =>
-                        setSelected(isSelected ? null : `${pole}-${index}`)
-                      }
-                    >
-                      <div className="trombi-photo"></div>
-                      <div>
-                        <p className="person-name">{person.name}</p>
-                        <p className="person-role">{person.role}</p>
-                      </div>
-                      {isSelected && (
-                        <p className="person-info">{person.info}</p>
-                      )}
+                {people.map((person, index) => (
+                  <div key={index} className="trombi-card">
+                    <div className="trombi-photo"></div>
+                    <div className="person-text">
+                      <p className="person-name">
+                        {person.firstname} {person.lastname}
+                      </p>
+                      <p className="person-role">{person.role}</p>
                     </div>
-                  );
-                })}
+                  </div>
+                ))}
               </div>
               <hr className="separator" />
             </section>
