@@ -1,7 +1,7 @@
 import React from "react";
 import pdfFile from "./assets/livret.pdf"; // place ton PDF dans src/assets
 
-export default function Trombi() {
+export default function Livret() {
   return (
     <div style={{ padding: "10px" }}>
       <div>
@@ -60,6 +60,9 @@ export default function Trombi() {
           fontFamily: "'Segoe UI', sans-serif", 
           color: "#3b927aff" }}>
 
+        {/* Séparateur */}
+        <hr style={{ margin: "40px auto", width: "80%", border: "1px solid #ccc" }} />
+
         Les chemins d'accès
         </h1>
 
@@ -76,7 +79,7 @@ export default function Trombi() {
         Pour vous repérer dans l’organisation de l’entreprise, voici quelques chemins d’accès utiles</p>
       </div>
       
-      {/* Grid avec URLs */}
+      {/* Grid avec Liens */}
       <div
         style={{
           display: "grid",
@@ -96,6 +99,120 @@ export default function Trombi() {
         <p>//Réseau/Marketing/Projet</p>
         <p>//Réseau/Marketing/Projet</p>
         <p>//Réseau/Marketing/Projet</p>
+      </div>
+
+      {/* Séparateur */}
+      <hr style={{ margin: "40px auto", width: "80%", border: "1px solid #ccc" }} />
+
+      <div>
+        <h1 
+        style={{ 
+          textAlign: "center", 
+          fontFamily: "'Segoe UI', sans-serif", 
+          color: "#3b927aff" }}>
+
+        Les sites et logiciels utiles
+        </h1>
+
+        <p
+        style={{
+          textAlign: "center",
+          fontSize: "15px",
+          lineHeight: "1.6",
+          maxWidth: "700px",
+          margin: "0 auto 30px auto",
+          color: "#000000ff",
+        }}>
+          
+        Des sites et logiciels que vous utiliserez quotidiennement</p>
+      </div>
+
+      {/* Grid avec URLs */}
+      <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(4, 1fr)",
+        gap: "15px",
+        textAlign: "center",
+        maxWidth: "1000px",
+        margin: "0 auto",
+      }}
+      >
+        <a 
+          href="https://www.google.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{
+            display: "block",
+            padding: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            textDecoration: "none",
+            color: "#4989bd",
+            fontWeight: "bold"
+          }}
+          onMouseEnter={(e) => e.target.style.color = "#45cfdc"}
+          onMouseLeave={(e) => e.target.style.color = "#4989bd"}
+          >
+          Google
+        </a>
+
+        <a 
+          href="https://www.google.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{
+            display: "block",
+            padding: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            textDecoration: "none",
+            color: "#4989bd",
+            fontWeight: "bold"
+          }}
+          onMouseEnter={(e) => e.target.style.color = "#45cfdc"}
+          onMouseLeave={(e) => e.target.style.color = "#4989bd"}
+          >
+          Google
+        </a>
+
+        <a 
+          href="https://www.google.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{
+            display: "block",
+            padding: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            textDecoration: "none",
+            color: "#4989bd",
+            fontWeight: "bold"
+          }}
+          onMouseEnter={(e) => e.target.style.color = "#45cfdc"}
+          onMouseLeave={(e) => e.target.style.color = "#4989bd"}
+          >
+          Google
+        </a>
+
+        <a 
+          href="https://www.google.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{
+            display: "block",
+            padding: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            textDecoration: "none",
+            color: "#4989bd",
+            fontWeight: "bold"
+          }}
+          onMouseEnter={(e) => e.target.style.color = "#45cfdc"}
+          onMouseLeave={(e) => e.target.style.color = "#4989bd"}
+          >
+          Google
+        </a>
       </div>
     </div>
   );
