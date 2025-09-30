@@ -2,20 +2,20 @@ import React, { useState } from "react";
 
 const members = {
   "Pôle Tech": [
-    { firstname: "Clara", lastname: "Dubois", role: "Développeuse Full Stack", email: "clara.dubois@example.com", linkedin: "https://linkedin.com/in/clara-dubois", photo: "/image-trombi-femme1.jpg" },
-    { firstname: "Julien", lastname: "Martinez", role: "DevOps Engineer", email: "julien.martinez@example.com", linkedin: "https://linkedin.com/in/julien-martinez", photo: "/image-trombi-homme1.jpg" },
-    { firstname: "Inès", lastname: "Nguyen", role: "Data Scientist", email: "ines.nguyen@example.com", linkedin: "https://linkedin.com/in/ines-nguyen", photo: "/image-trombi-femme2.jpg" },
-    { firstname: "Adrien", lastname: "Lefèvre", role: "UX/UI Designer", email: "adrien.lefevre@example.com", linkedin: "https://linkedin.com/in/adrien-lefevre", photo: "/image-trombi-homme2.jpg" }
+    { firstname: "Clara", lastname: "Dubois", role: "Développeuse Full Stack", email: "clara.dubois@example.com", linkedin: "https://linkedin.com/in/clara-dubois/888", photo: "/image-trombi-femme1.jpg" },
+    { firstname: "Julien", lastname: "Martinez", role: "DevOps Engineer", email: "julien.martinez@example.com", linkedin: "https://linkedin.com/in/julien-martinez/888", photo: "/image-trombi-homme1.jpg" },
+    { firstname: "Inès", lastname: "Nguyen", role: "Data Scientist", email: "ines.nguyen@example.com", linkedin: "https://linkedin.com/in/ines-nguyen/888", photo: "/image-trombi-femme2.jpg" },
+    { firstname: "Adrien", lastname: "Lefèvre", role: "UX/UI Designer", email: "adrien.lefevre@example.com", linkedin: "https://linkedin.com/in/adrien-lefevre/888", photo: "/image-trombi-homme2.jpg" }
   ],
   "Pôle Marketing": [
-    { firstname: "Élise", lastname: "Marquant", role: "Responsable Marketing Digital", email: "elise.marquand@example.com", linkedin: "https://linkedin.com/in/elise-marquand", photo: "/image-trombi-femme3.jpg" },
-    { firstname: "Lucas", lastname: "Devaux", role: "Chef de Produit", email: "lucas.devaux@example.com", linkedin: "https://linkedin.com/in/lucas-devaux", photo: "/image-trombi-homme3.jpg" },
-    { firstname: "Sofia", lastname: "Bellamy", role: "Content Manager", email: "sofia.bellamy@example.com", linkedin: "https://linkedin.com/in/sofia-bellamy", photo: "/image-trombi-femme4.jpg" },
-    { firstname: "Nathan", lastname: "Clément", role: "Responsable Acquisition", email: "nathan.clement@example.com", linkedin: "https://linkedin.com/in/nathan-clement", photo: "/image-trombi-homme4.jpg" }
+    { firstname: "Élise", lastname: "Marquant", role: "Responsable Marketing Digital", email: "elise.marquand@example.com", linkedin: "https://linkedin.com/in/elise-marquand/888", photo: "/image-trombi-femme3.jpg" },
+    { firstname: "Lucas", lastname: "Devaux", role: "Chef de Produit", email: "lucas.devaux@example.com", linkedin: "https://linkedin.com/in/lucas-devaux/888", photo: "/image-trombi-homme3.jpg" },
+    { firstname: "Sofia", lastname: "Bellamy", role: "Content Manager", email: "sofia.bellamy@example.com", linkedin: "https://linkedin.com/in/sofia-bellamy/888", photo: "/image-trombi-femme4.jpg" },
+    { firstname: "Nathan", lastname: "Clément", role: "Responsable Acquisition", email: "nathan.clement@example.com", linkedin: "https://linkedin.com/in/nathan-clement/888", photo: "/image-trombi-homme4.jpg" }
   ],
   "Pôle Comptabilité": [
-    { firstname: "Amélie", lastname: "Rocher", role: "Comptable", email: "amelie.rocher@example.com", linkedin: "https://linkedin.com/in/amelie-rocher", photo: "/image-trombi-femme5.jpg" },
-    { firstname: "Théo", lastname: "Giraud", role: "Contrôleur de Gestion", email: "theo.giraud@example.com", linkedin: "https://linkedin.com/in/theo-giraud", photo: "/image-trombi-homme5.jpg" },
+    { firstname: "Amélie", lastname: "Rocher", role: "Comptable", email: "amelie.rocher@example.com", linkedin: "https://linkedin.com/in/amelie-rocher/888", photo: "/image-trombi-femme5.jpg" },
+    { firstname: "Théo", lastname: "Giraud", role: "Contrôleur de Gestion", email: "theo.giraud@example.com", linkedin: "https://linkedin.com/in/theo-giraud/888", photo: "/image-trombi-homme5.jpg" },
   ]
 };
 
