@@ -30,7 +30,7 @@ npm install
 
 **Trombi :** Cette page permet à l’utilisateur de consulter les photos et les informations de ses collègues, organisés par pôle.
 
-**Livret :** Cette page permet à l’utilisateur de récupérer son livret de passation, d’accéder à différents liens et ressources, ainsi qu’aux sites internet utiles.
+**Livret :** Cette page permet à l’utilisateur de trouver toutes ses informations, de récupérer son livret de passation, d’accéder à différents liens et ressources, ainsi qu’aux sites internet utiles.
 
 
 ## **Lancement du site**

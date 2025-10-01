@@ -1,5 +1,5 @@
 import React from "react";
-import pdfFile from "./assets/livret.pdf"; // place ton PDF dans src/assets
+import pdfFile from "./assets/livret.pdf";
 import pdfCharte from "./assets/charte.pdf"; 
 import pdfProcess from "./assets/process.pdf"; 
 import pdfGuide from "./assets/guide.pdf"; 
