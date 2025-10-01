@@ -46,14 +46,16 @@ export default function Trombi() {
 
         .modal-photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 16px; }
         .modal-name { text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 16px; }
-
         .modal-text { margin-bottom: 8px; }
+
+        .social-icons { display: flex; gap: 16px; justify-content: center; margin-top: 16px; }
+        .social-icons img { width: 50px; height: 50px; cursor: pointer; transition: transform 0.2s; }
+        .social-icons img:hover { transform: scale(1.1); }
 
         @keyframes slideDown {
           from { margin-top: -300px; opacity: 0; }
           to { margin-top: 100px; opacity: 1; }
         }
-
         @keyframes fadeIn {
           from { background: rgba(0,0,0,0); }
           to { background: rgba(0,0,0,0.5); }
@@ -90,7 +92,17 @@ export default function Trombi() {
                 <p className="modal-name">{selectedPerson.firstname} {selectedPerson.lastname}</p>
                 <p className="modal-text"><strong>Rôle :</strong> {selectedPerson.role}</p>
                 <p className="modal-text"><strong>Email :</strong> {selectedPerson.email}</p>
-                <p className="modal-text"><strong>LinkedIn :</strong> <a href={selectedPerson.linkedin} target="_blank" rel="noopener noreferrer">{selectedPerson.linkedin}</a></p>
+
+                {/* Icônes réseaux sociaux */}
+                <div className="social-icons">
+                  <a href={selectedPerson.linkedin} target="_blank" rel="noopener noreferrer">
+                    <img src="/linkedin.svg" alt="LinkedIn" />
+                  </a>
+                  <a href="https://slack.com/intl/fr-fr/" target="_blank" rel="noopener noreferrer">
+                    <img src="/slack.svg" alt="Slack" />
+                  </a>
+                </div>
+
                 <div className="modal-close" onClick={() => setSelectedPerson(null)}>Fermer</div>
               </div>
             </div>
